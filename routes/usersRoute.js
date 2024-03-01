@@ -6,7 +6,8 @@ const userController = require('../controller/usersController')
 
 router.get('/', userController.getUsers);// GET all users
 router.post('/signup', userController.createUser); // Create a new user
-router.post('/login', userController.loginUser)
+router.post('/login', userController.loginUser)//login
+router.get('/:id', userController.getUserId)
 
 
 module.exports = router
